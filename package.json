@@ -1,0 +1,23 @@
+{
+  "name": "vuejs-app",
+  "version": "1.0.0",
+  "description": "VueJS application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack-dev-server"
+  },
+  "author": "Daniel Melo",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^1.0.11"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.17",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "copy-webpack-plugin": "^0.3.3",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
