@@ -1,7 +1,7 @@
 import Vue from 'vue';
 
 new Vue({
-  el : "#app",
+  el : '#app',
   data : {
     message : 'Yay! Vued!',
     todos : [
