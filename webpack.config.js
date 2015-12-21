@@ -23,7 +23,11 @@ module.exports = {
         query: {
           presets: ['es2015']
         }
-      }
+      },
+      {
+        test: /\.vue$/, // a regex for matching all files that end in `.vue`
+        loader: 'vue'   // loader to use for matched files
+      }      
     ]
   },
   plugins: [

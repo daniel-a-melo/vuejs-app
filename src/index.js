@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import Counter from './components/counter.vue';
 
 new Vue({
   el : '#app',
@@ -13,5 +14,8 @@ new Vue({
     reverseMessage : function() {
       this.message = this.message.split('').reverse().join('');
     }
+  },
+  components : {
+    counter : Counter
   }
 });
