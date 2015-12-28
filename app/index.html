@@ -5,16 +5,12 @@
    </head>
    <body>
      <div id="app">
-       <p>{{message}}</p>
-       <input v-model="message" />
-       <button v-on:click="reverseMessage">Reverse Message</button>
+       <p>
+         <a v-link="{ path: '/reverse' }">Go to Reverse</a>
+         <a v-link="{ path: '/counter' }">Go to Counter</a>
+       </p>
 
-       <ul>
-          <li v-for="todo in todos">{{todo.text}}</li>
-       </ul>
-
-       <counter></counter>
-
+       <router-view></router-view>
      </div>
 
      <script src="bundle.js"></script>

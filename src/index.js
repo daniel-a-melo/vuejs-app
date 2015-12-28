@@ -1,21 +1,21 @@
 import Vue from 'vue';
+import VueRouter from 'vue-router';
 import Counter from './components/counter.vue';
+import Reverse from './components/reverse.vue';
 
-new Vue({
-  el : '#app',
-  data : {
-    message : 'Yay! Vued!',
-    todos : [
-      {text : 'Bla1'},
-      {text : 'Bla2'}
-    ]
+Vue.use(VueRouter);
+
+var App = Vue.extend({});
+
+var router = new VueRouter();
+
+router.map({
+  '/reverse': {
+    component: Reverse
   },
-  methods : {
-    reverseMessage : function() {
-      this.message = this.message.split('').reverse().join('');
-    }
-  },
-  components : {
-    counter : Counter
+  '/counter': {
+    component: Counter
   }
 });
+
+router.start(App, '#app');
