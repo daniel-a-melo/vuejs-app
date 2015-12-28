@@ -1,3 +1,9 @@
+<style>
+   .counter h1 {
+     color : red;
+   }
+</style>
+
 <template>
   <div class="counter">
     <h1>I am a Counter Component. Edit me in dev mode.</h1>
