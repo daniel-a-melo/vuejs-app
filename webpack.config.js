@@ -27,7 +27,8 @@ module.exports = {
       {
         test: /\.vue$/, // a regex for matching all files that end in `.vue`
         loader: 'vue'   // loader to use for matched files
-      }      
+      },
+      { test: /\.html$/, loader: 'raw-loader' }      
     ]
   },
   plugins: [
